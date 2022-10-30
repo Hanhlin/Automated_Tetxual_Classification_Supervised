@@ -1,0 +1,36 @@
+/ ************************** Choice of K ************************** /
+
+The best choice of k parameter is 3. I tried different parameters 
+from 2 to 16 for k, yet the results are all the same. 
+Unknown documents 9 and 10 are always classified to incorrect 
+cluster due to the location.
+
+/ *************************** Accuracy *************************** /
+
+Under the setting of k = 3, the prediction of test set is the following:
+
+C1: Airline Safety	   , classified documents: 1, 2, 3, 4, 10
+C4: Hoof and Mouth Disease , classified documents: 5, 6, 9
+C7: Mortgage Rates	   , classified documents: 7, 8
+
+The correct classification is doc# 1, 2, 3, 4, 5, 6, 7, 8
+The incorrect classification is doc# 9, 10
+
+Thus, the accuracy on the test set is 8/10 = 0.8
+
+/ *********************** Confusion Matrix *********************** /
+
+[C1]
+		     predicted C1	   predicted non-C1
+ actual C1  		  4 			   1
+ actual non-C1 		  1 			   4
+
+[C4]
+		     predicted C4	   predicted non-C4
+ actual C4  		  2 			   1
+ actual non-C4 		  1 			   6
+
+[C7]
+		     predicted C7	   predicted non-C7
+ actual C7  		  2 			   0
+ actual non-C7 		  0 			   8
