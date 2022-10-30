@@ -1,6 +1,4 @@
 # TextAnalytics_Supervised
-
-## Goal 
 Perform KNN modeling and clustering of textual data
 
 ## Instructions
