@@ -1,4 +1,4 @@
-# TextAnalytics_Supervised
+# Automated_Tetxual_Classification_Supervised
 Perform KNN modeling and clustering of textual data
 
 ## Instructions
